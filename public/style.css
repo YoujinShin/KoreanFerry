@@ -1,12 +1,14 @@
-      .navbar-inner {
-        background-image: none !important; background-color: #ffffff !important;
-        border-radius: 0px !important; box-shadow: none !important; 
-        padding-top: 4px !important; padding-bottom: 3px !important;
-      }
-      .brand {
-        font-family: sans-serif !important; font-size: 1.15em !important; font-weight: 800 !important; letter-spacing: 1px !important; 
-        color: black !important;
-      }
-      .nav {
-        font-family: sans-serif !important; font-size: 0.84em !important; font-weight: 400 !important; letter-spacing: 1px !important; 
-      }
+.navbar-inner {
+  background-image: none !important; background-color: #ffffff !important;
+  border-radius: 0px !important; box-shadow: none !important; 
+  padding-top: 4px !important; padding-bottom: 1px !important;
+}
+.brand {
+  font-family: sans-serif !important; font-size: 1.15em !important; font-weight: 800 !important; 
+  letter-spacing: 1px !important; 
+  color: black !important;
+}
+.nav {
+  font-family: sans-serif !important; font-size: 0.84em !important; font-weight: 400 !important; 
+  letter-spacing: 1px !important; 
+}
