@@ -1,0 +1,28 @@
+{
+  "nodes":[
+    {"name":"GOVERNMENT","group":0}, 
+    {"name":"KBS","group":1},
+    {"name":"staff strike","group":1},
+    {"name":"resign","group":1},
+    {"name":"reporters' statement","group":1},
+    {"name":"JTBC","group":2},
+    {"name":"appology","group":2},
+    {"name":"tear","group":2},
+    {"name":"KBS worker interview","group":2},
+    {"name":"message from ferry","group":2},
+    {"name":"disband cost guard","group":0},
+    {"name":"PM resign","group":0}
+  ],
+  "links":[
+    {"source":2,"target":1,"value":10},
+    {"source":3,"target":1,"value":1},
+    {"source":4,"target":1,"value":1},
+    {"source":5,"target":1,"value":10},
+    {"source":6,"target":5,"value":1},
+    {"source":7,"target":5,"value":2},
+    {"source":8,"target":5,"value":1},
+    {"source":9,"target":5,"value":1},
+    {"source":10,"target":0,"value":1},
+    {"source":11,"target":0,"value":1}
+  ]
+}
