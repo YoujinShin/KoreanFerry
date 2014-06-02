@@ -33,7 +33,7 @@ d3.json("miserables.json", function(error, graph) {
       .call(force.drag);
 
   node.append("circle")
-      .attr("r", 12)
+      .attr("r", 6)
       // .attr("x", -8)
       // .attr("y", -8)
       .attr("width", 16)
@@ -41,7 +41,7 @@ d3.json("miserables.json", function(error, graph) {
       .style("fill", function(d) { return color(d.group); });
 
   node.append("text")
-      .attr("dx", 12)
+      .attr("dx", 10)
       .attr("dy", ".35em")
       .text(function(d) { return d.name });
 
