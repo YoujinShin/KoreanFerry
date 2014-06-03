@@ -4,8 +4,8 @@ var width = 1400,
 var color = d3.scale.category20();
 
 var force = d3.layout.force()
-    .charge(-840)
-    .linkDistance(96)
+    .charge(-890)
+    .linkDistance(125)
     // .charge(-120)
     // .linkDistance(30)
     .size([width, height]);
@@ -33,7 +33,8 @@ d3.json("miserables.json", function(error, graph) {
       .call(force.drag);
 
   node.append("circle")
-      .attr("r", 6)
+      .attr("r", function(d) { return 8/(d.value); })
+      //.attr("r", 6)
       // .attr("x", -8)
       // .attr("y", -8)
       .attr("width", 16)
@@ -43,6 +44,13 @@ d3.json("miserables.json", function(error, graph) {
   node.append("text")
       .attr("dx", 10)
       .attr("dy", ".35em")
+      .style("fill", function(d) { 
+          if(d.value == 1) { 
+            return "black";
+          } else {
+            return "grey";
+          }
+       })
       .text(function(d) { return d.name });
 
   force.on("tick", function() {

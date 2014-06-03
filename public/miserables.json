@@ -1,28 +1,34 @@
 {
   "nodes":[
-    {"name":"GOVERNMENT","group":0}, 
-    {"name":"KBS","group":1},
-    {"name":"staff strike","group":1},
-    {"name":"resign","group":1},
-    {"name":"reporters' statement","group":1},
-    {"name":"JTBC","group":2},
-    {"name":"appology","group":2},
-    {"name":"tear","group":2},
-    {"name":"KBS worker interview","group":2},
-    {"name":"message from ferry","group":2},
-    {"name":"disband coast guard","group":0},
-    {"name":"PM resign","group":0}
+    {"name":"JTBC(media)","group":0,"value":1}, 
+    {"name":"KBS(media)","group":1,"value":1},
+    {"name":"staff strikes launched","group":1,"value":2},
+    {"name":"newsroom head resigned","group":1,"value":2},
+    {"name":"statement on meddling","group":1,"value":2},
+    {"name":"Government","group":2,"value":1},
+    {"name":"disband coast guard","group":2,"value":2},
+    {"name":"field trip canceled","group":2,"value":2},
+    {"name":"PM resigned","group":2,"value":2},
+    {"name":"condemn on crew actions","group":2,"value":2},
+    {"name":"anchor's appology","group":0,"value":2},
+    {"name":"interview w/ KBS staff","group":0,"value":2},
+    {"name":"chief refuses to quit", "group":1,"value":2},
+    {"name":"Passenger's families", "group":3,"value":1},
+    {"name":"messages from ferry", "group":3,"value":2},
+    {"name":"protests w/ citizen", "group":3,"value":2}
   ],
   "links":[
     {"source":2,"target":1,"value":10},
     {"source":3,"target":1,"value":1},
     {"source":4,"target":1,"value":1},
-    {"source":5,"target":1,"value":10},
     {"source":6,"target":5,"value":1},
     {"source":7,"target":5,"value":2},
     {"source":8,"target":5,"value":1},
     {"source":9,"target":5,"value":1},
     {"source":10,"target":0,"value":1},
-    {"source":11,"target":0,"value":1}
+    {"source":11,"target":0,"value":1},
+    {"source":12,"target":1,"value":1},
+    {"source":14,"target":13,"value":1},
+    {"source":15,"target":13,"value":1}
   ]
 }
