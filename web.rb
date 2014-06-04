@@ -10,5 +10,6 @@ get '/time' do
 end
 
 get '/viz' do
+  # erb :graph
   erb :viz
 end
