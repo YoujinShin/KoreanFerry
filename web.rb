@@ -2,6 +2,10 @@ require 'sinatra'
 require 'rubygems' 
 
 get '/' do
+  erb :main
+end
+
+get '/time' do
   erb :timeline
 end
 
