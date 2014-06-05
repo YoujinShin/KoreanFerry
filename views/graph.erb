@@ -12,12 +12,21 @@
       .navbar {
         z-index: 20;
       }
-      p{
-        padding-top: 8px; 
-        padding-bottom: 8px;
-
-        font-size: 15px; line-height: 140%;
+      h2 {
+        padding: 5px;
+        padding-bottom: 0px;
+      }
+      p {
+        padding-top: 0px; 
+        /*padding-bottom: 22px;*/
+        text-align: center;
+/*        padding-left: 12%;
+        padding-right: 12%;*/
+        font-family: sans-serif;
+        font-size: 12px; line-height: 110%;
         font-weight: 300;
+        letter-spacing: 1px;
+        /*color: rgb(100,100,100);*/
         position: relative; margin: 0px;
       }
       .bgrey {
@@ -57,8 +66,21 @@
     <script src="processing.js" type="text/javascript"></script>
   
   <h2 style="text-align:center; font-size: 18px;">Changes in audience ratings of the major news programs</h2>
-   <canvas id="myCanvas"></canvas>
-   <p class="bgrey" style="padding-top:36px;">
+  
+  <p>
+    <span style="color:rgb(248,101,98)">KBS</span>, 
+    <span style="color:rgb(249,170,104)">SBS</span>, 
+    <span style="color:rgb(180,180,180)">MBC</span>: National Networks
+  </p>
+  <p style="padding-bottom:30px;">
+    <span style="color:rgb(24,127,228)">JTBC</span>, 
+    <span style="color:rgb(80,258,85)">MBN</span>: Cable Networks 
+  </p>
+  
+  
+  <canvas id="myCanvas"></canvas>
+
+<!--    <p class="bgrey" style="padding-top:36px;">
       This visualization shows the changes in audience ratings of the major news programs in Korean broadcasting media after the ferry disaster. It covers data in week days from April 1, to May 30th. The following explains the structure of Korean broadcasting media:
    </p>
    <div class="bgrey" style="padding-bottom:36px;">
@@ -67,7 +89,7 @@
         <li>Comprehensive PP (JTBC, MBN, TV Chosun, Channel A)</li>
         <li>Cable Networks</li>
       </ul>
-      <div>
+  <div> -->
    
 
 
@@ -80,7 +102,8 @@ mbn mymbn = new mbn();
 
 void setup() {
   //  size(640, 360);
-  size(1420, 595);
+  // size(1420, 595);
+  size(1420, 520);
 }
 
 void draw() {
@@ -498,7 +521,8 @@ class mbn {
       float y = map(mbnView[i], 0, 6, height*0.9, height*0.1);
       
       if(i==0) {
-        fill(249,170,104);
+        // fill(249,170,104);
+        fill(80,258,85);
         textSize(12);
         textAlign(RIGHT);
         text("MBN",x-4,y+0);
@@ -510,7 +534,8 @@ class mbn {
       
       float d = abs(mouseX - x);
       if(d < maxd) {  
-        fill(249,170,104);
+        // fill(249,170,104);
+        fill(80,258,85);
         noStroke();
         ellipse(x, y, 4, 4);
         noFill();
@@ -518,7 +543,8 @@ class mbn {
       
       vertex(x, y);
 //      stroke(248,101,98); // red
-      stroke(249,170,104,230); 
+      // stroke(249,170,104,230); 
+      stroke(80,258,85);
       strokeWeight(0.8);
     }
     endShape();
@@ -556,7 +582,8 @@ class sbs {
       float y = map(sbsView[i], 0, 6, height*0.9, height*0.1);
       
       if(i==0) {
-        fill(80,258,85); 
+        // fill(80,258,85); 
+        fill(249,170,104);
         textSize(12);
         textAlign(RIGHT);
         text("SBS",x-4,y+0);
@@ -573,7 +600,8 @@ class sbs {
 //        text(sbsView[i] + "%", x + 4,y-2);
         noFill();
         
-        fill(80,258,85);
+        // fill(80,258,85);
+        fill(249,170,104);
         noStroke();
         ellipse(x, y, 4, 4);
         noFill();
@@ -581,7 +609,8 @@ class sbs {
       
       vertex(x, y);
 //      stroke(248,101,98); // red
-      stroke(80,258,85,200); 
+      // stroke(80,258,85,200); 
+      stroke(249,170,104,220);
       strokeWeight(0.8);
     }
     endShape();
