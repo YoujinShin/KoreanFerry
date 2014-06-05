@@ -12,7 +12,26 @@
       .navbar {
         z-index: 20;
       }
-
+      p {
+        padding-top: 8px; 
+        padding-bottom: 8px;
+        padding-left: 7%;
+        padding-right: 7%;
+        /*font-family: sans-serif;*/
+        font-size: 15px; line-height: 140%;
+        font-weight: 300;
+        letter-spacing: 1px;
+        /*color: rgb(100,100,100);*/
+        position: relative; margin: 0px;
+      }
+      .bgrey {
+        padding-top:36px; 
+        padding-bottom:36px;
+        background-color: black;
+        color: white;
+        font-weight: 100 !important;
+        margin: 0px;
+      }
     </style>
 
     <link rel="stylesheet" href="style.css">
@@ -39,6 +58,10 @@
     <script src="processing.js" type="text/javascript"></script>
 
    <canvas id="myCanvas"></canvas>
+   <p class="bgrey">
+      This visualization shows the changes in audience rating of the major news programs in Korean broadcasting media. It covers data in week days from April 1, to May 30th.
+    </p>
+
 
 <script type="text/processing" data-processing-target="myCanvas">
     kbs mykbs = new kbs();
@@ -49,7 +72,7 @@ mbn mymbn = new mbn();
 
 void setup() {
   //  size(640, 360);
-  size(1460, 660);
+  size(1420, 630);
 }
 
 void draw() {
@@ -179,7 +202,8 @@ class jtbc {
         if(current.equals("4/16")) {
           rectMode(CORNER);
           noStroke();
-          rect(x, height*0.18, 345, 20); 
+          // rect(x, height*0.18, 335, 20); 
+          rect(x, height*0.177, 335, 20); 
           fill(255);
           text("Chief anchor's at JTBC apologizes for ferry victim interview", x+ 4, height*0.2); 
         }
@@ -268,7 +292,8 @@ class kbs {
         if(current.equals("5/9")) {
           rectMode(CORNER);
           noStroke();
-          rect(x, height*0.18, 185, 20); 
+          // rect(x, height*0.18, 185, 20); 
+          rect(x, height*0.177, 185, 20); 
           fill(255);
         
           //text("KBS Newsroom head resigned over a conversational comment on the victims", width*0.1+ 20, height*0.58);
@@ -276,7 +301,8 @@ class kbs {
         }else if(current.equals("5/19")) {
           rectMode(CORNER);
           noStroke();
-          rect(x, height*0.18, 245, 20); 
+          // rect(x, height*0.18, 245, 20); 
+          rect(x, height*0.177, 245, 20); 
           fill(255);
           
 //          text("KBS staff strike as a chief refuses to quit", width*0.1+ 20, height*0.58);
@@ -284,7 +310,8 @@ class kbs {
         }else if(current.equals("5/30")) {
           rectMode(CORNER);
           noStroke();
-          rect(x, height*0.18, -250, 20); 
+          // rect(x, height*0.18, -250, 20); 
+          rect(x, height*0.177, -250, 20); 
           fill(255);
           
           textAlign(RIGHT);
@@ -293,7 +320,8 @@ class kbs {
         }else if(current.equals("5/8")) {
           rectMode(CORNER);
           noStroke();
-          rect(x, height*0.18, 275, 20); 
+          // rect(x, height*0.18, 275, 20); 
+          rect(x, height*0.177, 275, 20); 
           fill(255);
           
 //          text("KBS Sewol report was staged, reporters admit", width*0.1+ 20, height*0.58);
