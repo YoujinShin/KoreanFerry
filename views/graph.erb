@@ -125,7 +125,14 @@ mbn mymbn = new mbn();
 void setup() {
   //  size(640, 360);
   // size(1420, 595);
-  size(1420, 500);
+  //size(1420, 500);
+  //size(screen.width, 500); // screen size
+  //size($(window).width(), 500); // browser size
+  if($(window).width() > 1100) {
+    size($(window).width(), 500); 
+  } else {
+    size(1100, 500);
+  }
 }
 
 void draw() {
