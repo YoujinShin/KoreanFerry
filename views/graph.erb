@@ -319,6 +319,12 @@ class kbs {
         
         fill(0);
         textSize(12);
+
+        if(current.equals("4/16")) {
+          if(mousePressed) { 
+            link("http://khnews.kheraldm.com/view.php?ud=20140417001152&md=20140420004210_BK", "_new");  
+          }
+        }
         
         if(current.equals("5/9")) {
           rectMode(CORNER);
@@ -326,6 +332,10 @@ class kbs {
           // rect(x, height*0.18, 185, 20); 
           rect(x, height*0.177, 185, 20); 
           fill(255);
+
+          if(mousePressed) { 
+            link("http://www.koreaherald.com/view.php?ud=20140518000407", "_new");  
+          }
         
           //text("KBS Newsroom head resigned over a conversational comment on the victims", width*0.1+ 20, height*0.58);
           text("KBS Newsroom head resigned", x+ 4, height*0.2); 
@@ -335,8 +345,10 @@ class kbs {
           // rect(x, height*0.18, 245, 20); 
           rect(x, height*0.177, 245, 20); 
           fill(255);
-          
-//          text("KBS staff strike as a chief refuses to quit", width*0.1+ 20, height*0.58);
+
+          // if(mousePressed) { 
+          //   link("http://www.koreaherald.com/view.php?ud=20140519001550", "_new");  
+          // }
           text("KBS staff strike as a chief refuses to quit", x+ 4, height*0.2);
         }else if(current.equals("5/30")) {
           rectMode(CORNER);
@@ -346,16 +358,23 @@ class kbs {
           fill(255);
           
           textAlign(RIGHT);
-//          text("KBS workers launch strike over meddling", width*0.1+ 20, height*0.58);
           text("KBS workers launch strike over meddling", x- 4, height*0.2);
+          
+          if(mousePressed) { 
+            link("http://www.koreaherald.com/view.php?ud=20140529001334", "_new");  
+          }
+
         }else if(current.equals("5/8")) {
           rectMode(CORNER);
           noStroke();
           // rect(x, height*0.18, 275, 20); 
           rect(x, height*0.177, 275, 20); 
           fill(255);
+
+          if(mousePressed) { 
+            link("http://www.koreatimes.co.kr/www/news/nation/2014/05/113_156833.html", "_new");  
+          }
           
-//          text("KBS Sewol report was staged, reporters admit", width*0.1+ 20, height*0.58);
           text("KBS Sewol report was staged, reporters admit", x+ 4, height*0.2);
         }
 
@@ -379,7 +398,7 @@ class kbs {
           if(mousePressed) { link("http://www.bbc.com/news/world-asia-27420071", "_new");  }
         } else if(current.equals("5/19")) {
           ellipse(x,height*0.1,10,10);
-          if(mousePressed) { link("http://www.koreaherald.com/view.php?ud=20140519001550", "_new");  }
+          if(mousePressed) { link("http://www.nytimes.com/2014/05/19/world/asia/south-korean-president-vows-to-disband-coast-guard-over-ferry-sinking.html?action=click&module=Search&region=searchResults&mabReward=relbias%3As&url=http%3A%2F%2Fquery.nytimes.com%2Fsearch%2Fsitesearch%2F%3Faction%3Dclick%26region%3DMasthead%26pgtype%3DHomepage%26module%3DSearchSubmit%26contentCollection%3DHomepage%26t%3Dqry404%23%2Fpresident+park", "_new");  }
         }
 
         //noFill();
