@@ -13,3 +13,7 @@ get '/viz' do
   erb :graph
   # erb :viz
 end
+
+get '/viz_d3' do
+  erb :viz_d3
+end
