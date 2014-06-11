@@ -17,3 +17,8 @@ end
 get '/viz_d3' do
   erb :viz_d3
 end
+
+get '/viz_d3_iframe' do
+	# "hello world"
+  erb :viz_d3_iframe
+end
